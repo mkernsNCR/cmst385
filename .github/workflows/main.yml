@@ -16,7 +16,7 @@ on:
 
     branches:
 
-      - master
+      - main
 
 jobs:
 
@@ -24,7 +24,7 @@ jobs:
 
     runs-on: windows-latest
 
-     steps:
+    steps:
 
     - uses: actions/checkout@master
 
