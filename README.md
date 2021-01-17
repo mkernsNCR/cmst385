@@ -2,7 +2,7 @@
 
 # CMST 386 | Principles of Web Desing and Technology I
 
-## Projects
+## [Projects](http://cmst385-mkerns5.azurewebsites.net/)
 
 1. [Project 1](https://github.com/mkernsNCR/cmst385/tree/main/project1)
 2. Project 2
