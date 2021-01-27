@@ -1,0 +1,72 @@
+/* * {
+  border: 1px solid red;
+} */
+main {
+  height: 100vh;
+  width: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.flex-container {
+  background: deepskyblue;
+}
+
+.title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.title a {
+  color: black;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.title a:hover {
+  background: #00ace6;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: space-evenly;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.nav a:hover {
+  background: #00ace6;
+  color: white;
+  transition: 0.3s;
+}
+
+h1 {
+  margin-top: 20px;
+  color: black;
+}
+
+/* Home Page */
+.photo-background {
+  background-image: url("./img/fall-out-boy2.png");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 100vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* About Page */
+
+/* Music Page */
+
+/* News Page */
