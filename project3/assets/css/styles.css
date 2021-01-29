@@ -1,10 +1,6 @@
 /* * {
-  border: 1px solid red;
+  outline: 1px solid red;
 } */
-main {
-  height: 100vh;
-  width: auto;
-}
 
 li {
   list-style: none;
@@ -14,7 +10,7 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.7);
+  /* background: rgba(255, 255, 255, 0.7); */
   width: 100%;
   top: 20em;
   left: 0;
@@ -23,19 +19,27 @@ li {
 
 .title {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 4em;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 .title a {
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 0.2em;
   text-decoration: none;
 }
 
-.title a:hover {
+/* .title a:hover {
   background: #04050585;
   color: white;
   transition: 0.3s;
+} */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav {
@@ -47,7 +51,7 @@ li {
   display: block;
   text-decoration: none;
   padding: 1em;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .nav a:hover {
@@ -69,7 +73,7 @@ h1 {
 }
 
 .photo-background {
-  background-image: url("./img/fall-out-boy2.png");
+  background-image: url("../img/fall-out-boy1.jpg");
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 100%; /* You must set a specified height */
   width: 100%;
