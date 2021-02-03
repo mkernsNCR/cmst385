@@ -1,6 +1,9 @@
 /* * {
   outline: 1px solid red;
 } */
+* {
+  box-sizing: border-box;
+}
 
 li {
   list-style: none;
@@ -18,7 +21,7 @@ li {
 }
 
 .title {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narcol", Arial, sans-serif;
   font-size: 3em;
   font-weight: bold;
   margin-bottom: 0;
@@ -41,6 +44,8 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 10%;
+  max-width: 100vw;
 }
 
 .nav {
@@ -98,6 +103,7 @@ h1 {
 }
 
 .photo-background {
+  margin: auto;
   background-image: url("../img/fall-out-boy1.jpg");
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 100%; /* You must set a specified height */
@@ -107,33 +113,62 @@ h1 {
   background-size: cover; /* Resize the background image to cover the entire container */
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   position: absolute;
 }
 
-.row {
+.col {
+  margin: 10px;
   padding: 20px;
   border: 1px solid black;
   display: flex;
-  height: 5em;
-  max-width: 17em;
-  width: 100%;
-  justify-content: space-between;
+  height: 10em;
   align-items: center;
-  flex-direction: row;
+  justify-content: space-around;
 }
 
-.row-head {
+.col-head {
   text-align: center;
 }
 
 .table {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-@media screen and (min-width: 480px) {
-  body {
-    background-color: lightgreen;
+.table .col {
+  width: 32%;
+}
+
+/* @media screen and (max-width: 480px) {
+  .table {
+    display: block;
+    max-width: 17em;
+  }
+
+  .table .col {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .table {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table .col {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .table .col {
+    width: 31%;
   }
 }
 
