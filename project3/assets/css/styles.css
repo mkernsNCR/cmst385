@@ -132,42 +132,30 @@ h1 {
   text-align: center;
 }
 
-.table {
+.grid {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.table .col {
+.grid .col {
   width: 32%;
 }
 
-/* @media screen and (max-width: 480px) {
-  .table {
-    display: block;
-    max-width: 17em;
-  }
-
-  .table .col {
-    width: 100%;
-    margin: 0 0 10px 0;
-  }
-} */
-
 @media screen and (max-width: 768px) {
-  .table {
+  .grid {
     display: flex;
     flex-direction: column;
   }
 
-  .table .col {
+  .grid .col {
     width: 100%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .table .col {
+  .grid .col {
     width: 31%;
   }
 }
