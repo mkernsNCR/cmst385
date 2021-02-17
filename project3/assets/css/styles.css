@@ -163,5 +163,75 @@ h1 {
 /* About Page */
 
 /* Music Page */
+.row {
+  width: 100%;
+}
+.music-col {
+  margin: 2em;
+  padding: 3%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.music-ctn {
+  margin-top: 20px;
+  /* outline: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bg {
+  background-image: url("https://ar.toneden.io/4550795/3f69221e-92dd-4d83-a5a7-3f33513c6791");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-filter: blur(25px);
+  filter: blur(25px);
+  overflow: auto;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  top: 0;
+}
+.bg-top {
+  overflow: auto;
+  background: #1b1b1b;
+  height: 50px;
+}
+
+.album-title {
+  font-family: "Satisfy", cursive;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.art-wrk {
+  height: 100%;
+  width: 10em;
+}
+
+@media screen and (max-width: 768px) {
+  .music-ctn {
+    flex-direction: column;
+  }
+
+  .grid .col {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .grid .col {
+    width: 31%;
+  }
+}
 
 /* News Page */
