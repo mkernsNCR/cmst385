@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-li {
+ul > li {
   list-style: none;
 }
 
@@ -96,7 +96,7 @@ h1 {
   line-height: 2;
 }
 
-.header-container {
+#header-container {
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -173,10 +173,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: column;
 }
 .music-ctn {
   margin-top: 20px;
-  /* outline: 1px solid red; */
+  flex-direction: column;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -219,10 +220,6 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-  .music-ctn {
-    flex-direction: column;
-  }
-
   .grid .col {
     width: 100%;
   }
