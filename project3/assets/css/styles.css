@@ -236,7 +236,7 @@ h1 {
 
 .news-ctn {
   margin-top: 20px;
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -244,9 +244,14 @@ h1 {
 .news-col {
   margin: 2em;
   padding: 3%;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .news-ctn {
+    flex-wrap: wrap;
+  }
 }
