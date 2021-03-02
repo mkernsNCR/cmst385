@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+body > section {
+  font-family: Verdana, Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 ul > li {
   list-style: none;
 }
@@ -88,6 +93,7 @@ h1 {
   flex-direction: column;
   height: 25vh;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 /* Home Page */
