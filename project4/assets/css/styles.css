@@ -83,9 +83,13 @@ ul > li {
   color: #fff;
 }
 
-.title_sub strong {
+.title-sub strong {
   font-size: 25px;
   text-transform: uppercase;
+}
+
+.title-sub {
+  margin-bottom: 10px;
 }
 
 .row {
@@ -220,8 +224,12 @@ h2 {
 }
 
 .btn {
+  color: black;
+  margin-top: 5px;
+  background-color: white;
   border-radius: 100px;
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 12px;
   letter-spacing: 0.2rem;
   padding: 1rem;
